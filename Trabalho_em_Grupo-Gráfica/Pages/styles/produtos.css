@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cores do site*/
+:root{
+    --blue: #47ACFF;
+    --red: #FD7777;
+    --yellow: #FFDB4C;
+    --green: #5BFFA7;
+    --purple: #B19BFF;
+}
+
+body{
+    background-color: white;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+/*Primeiro menu*/
+.menu{
+    width: 15%;
+    height: 80vh;
+    padding: 40px 0 40px 1%;
+    background: linear-gradient(to top, var(--blue), var(--purple));
+    display: inline-block;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    margin-bottom: 70px;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    color: rgb(216, 216, 216);
+}
+
+.menu img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -25px;
+}
+
+/*Segundo menu*/
+.menu2{
+    width: 97.3%;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--purple);
+    padding: 20px;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+}
+
+.menu2 a{
+    color: white;
+    padding: 10px 19px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.menu2 a:hover{
+    color: rgb(216, 216, 216);
+}
+
+/*Produtos*/
+.produtos{
+    height: 80vh;
+    width: 70%;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 100px;
+    gap: 10px;
+}
+
+.produto{
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to top, var(--blue), var(--purple));
+    border-radius: 10px;
+}
+
+.produto img{
+    width: 200px;
+}
+
+.produto h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.produto p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produto button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--red);
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.produto button:hover{
+    background-color: var(--green);
+}

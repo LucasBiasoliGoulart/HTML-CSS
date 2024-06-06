@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cores do site*/
+:root{
+    --blue: #47ACFF;
+    --red: #FD7777;
+    --yellow: #FFDB4C;
+    --green: #5BFFA7;
+    --purple: #B19BFF;
+}
+
+body{
+    background-color: white;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background: linear-gradient(to right, var(--blue), var(--purple));
+    box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+}
+
+.menu a{
+    color: white;
+    padding: 10px 19px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.menu a:hover{
+    color: rgb(216, 216, 216);
+}
+
+.menu img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.serviço{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.entrega{
+    width: 300px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(to top, var(--yellow), var(--red));
+    box-shadow: 0 10px 5px rgba(0,0,0,0.2);
+}
+
+.entrega h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.entrega p{
+    text-align: center;
+    font-size: 17px;
+}
+
+.entrega img{
+    width: 80px;
+    height: 80px;
+}
+
+/*Reponsividade*/
+@media (min-width: 320px) and (max-width: 800px){
+    .menu{
+        width: 100%;
+    }
+
+    .menu img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .serviço{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .entrega{
+        width: 400px;
+    }
+}

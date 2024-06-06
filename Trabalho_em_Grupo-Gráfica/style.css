@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cores do site*/
+:root{
+    --blue: #47ACFF;
+    --red: #FD7777;
+    --yellow: #FFDB4C;
+    --green: #5BFFA7;
+    --purple: #B19BFF;
+}
+
+body{
+    background-color: white;
+}
+
+/*Menu*/
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background: linear-gradient(to right, var(--blue), var(--purple));
+    box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+}
+
+.menu a{
+    color: white;
+    padding: 10px 19px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.menu a:hover{
+    color: rgb(216, 216, 216);
+}
+
+.menu img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/*Banner*/
+.banner{
+    height: 100vh;
+}
+
+.banner h1{
+    color: var(--purple);
+    font-size: 100px;
+    font-family: "Poetsen One";
+    font-variant: small-caps;
+    transition-duration: 0.4s;
+}
+
+.banner h1:hover{
+    color: var(--blue);
+}
+
+/*Titulo*/
+.titulo{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo h2{
+    font-size: 70px;
+    font-family: "Poetsen One";
+    margin-bottom: 40px;
+}
+
+/*Produtos Principal*/
+.produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.produto{
+    width: 400px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top, var(--blue), var(--purple));
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+}
+
+.produto img{
+    width: 70%;
+}
+
+.produto h3{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.produto p{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produto button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: var(--yellow);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    color: black;
+}
+
+.produto button:hover{
+    background-color: var(--green);
+    color: black;
+}
+
+/*Parallax*/
+#parallax{
+    background-image: url(./Img/Banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right 80%;
+}
+
+#parallax2{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Img/Banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right 80%;
+}
+
+/*Reponsividade*/
+@media (min-width: 320px) and (max-width: 800px){
+    .menu{
+        width: 100%;
+    }
+
+    .menu img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .titulo{
+        height: 160vh;
+    }
+
+    .produtos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .produto{
+        width: 300px;
+    }
+}
