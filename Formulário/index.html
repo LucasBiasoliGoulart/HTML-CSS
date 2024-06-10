@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input class="idade" type="number" name="Idade" id="idade" min="18" max="99" placeholder="18 a 99">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" required placeholder="(xx)xxxxx-xxxx">
+            </div>
+            <div>
+                <label for="SM">Masculino</label>
+                <input type="radio" name="sexo" id="SM" checked>
+
+                <label for="SF">Feminino</label>
+                <input type="radio" name="sexo" id="SF">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datas</legend>
+            <div>
+                <label for="mes">Periodo Letivo:</label>
+                <input type="month" name="mes" id="mes"><br>
+
+                <label for="dia">Data da prova:</label>
+                <input type="date" name="dia" id="dia"><br>
+
+                <label for="">Horário da prova:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+            <div>
+                <label for="cor">Cores:</label>
+                <input type="color" name="cor" id="cor" value="000000">
+            </div>
+            <div>
+                <label for="nivel">Satisfação:</label>
+                <input type="range" name="nivel" id="nivel" min="0" max="10" value="5">
+            </div>
+            <div>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="" selected>Selecione</option>
+                    <optgroup label="Rigão Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="prof">Profissão:</label>
+                <input type="text" name="prof" id="prof" list="Iprof">
+                <datalist id="Iprof">
+                    <option value="ADM">Adiministrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="ENG">Engenheiro</option>
+                    <option value="MED">Médico</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="msg" cols="30" rows="3"></textarea>
+            </div>
+        </fieldset>
+        <button>Enviar</button>
+    </main>
+</body>
+</html>
