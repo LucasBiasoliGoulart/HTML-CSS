@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    position: relative;
+    background-image: url(./imagens/fundo-madeira.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*-------Celular-------*/
+main{
+    width: 300px;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./imagens/frame-iphone.png);
+}
+
+/*-------Tela principal-------*/
+.tela{
+    width: 270px;
+    height: 61vh;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-image: url(./imagens/tela-home.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+/*-------Redes sociais-------*/
+.redes{
+    text-align: right;
+    padding: 10px;
+}
+
+.redes img{
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.redes img:hover{
+    border: 1px solid white;
+}
+
+/*-------Redes-------*/
+.face{
+    width: 270px;
+    height: 61vh;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-image: url(./redes/facebook.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.insta{
+    width: 270px;
+    height: 61vh;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-image: url(./redes/instagram.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.twit{
+    width: 270px;
+    height: 61vh;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-image: url(./redes/twitter.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.tube{
+    width: 270px;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-image: url(./redes/youtube.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.git{
+    width: 270px;
+    height: 61vh;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-image: url(./redes/github.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
