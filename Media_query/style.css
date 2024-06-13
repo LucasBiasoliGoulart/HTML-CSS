@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagens/back-tv.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+    color: white;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.pc{display: none;}
+.phone{display: none;}
+.tablet{display: none;}
+.tv{display: block;}
+
+/*---------Media Screen---------*/
+/*---------PC---------*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .pc{display: block;}
+    .phone{display: none;}
+    .tablet{display: none;}
+    .tv{display: none;}
+
+    body{
+        background-image: url(./imagens/back-pc.jpg);
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    img{
+        width: 20%;
+    }
+}
+
+/*---------Tablet---------*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .pc{display: none;}
+    .phone{display: none;}
+    .tablet{display: block;}
+    .tv{display: none;}
+
+    body{
+        background-image: url(./imagens/back-tablet.jpg);
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    img{
+        width: 20%;
+    }
+}
+
+/*---------Phone---------*/
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .pc{display: none;}
+    .phone{display: block;}
+    .tablet{display: none;}
+    .tv{display: none;}
+
+    body{
+        background-image: url(./imagens/back-phone.jpg);
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    img{
+        width: 20%;
+    }
+}
