@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*-------Cores da página-------*/
+:root{
+    --blue: #000080;
+    --orange: #f49f1c;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+}
+
+/*-------Menu-------*/
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+header img{
+    width: 55px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    color: var(--white);
+    padding: 10px 19px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.link{
+    background-color: var(--orange);
+    color: var(--black);
+}
+
+/*-------Hover-------*/
+nav a:hover{
+    color: var(--orange);
+}
+
+.link:hover{
+    color: var(--blue);
+}
+
+/*-------Cadastro-------*/
+.cadastro{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    width: 500px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.info h1{
+    font-size: 40px;
+    color: var(--orange);
+}
+
+.info p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: var(--black);
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.info button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.info a{
+    color: var(--orange);
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+
+.info a:hover{
+    color: var(--blue);
+}
+
+/*-------Reponsividade-------*/
+@media screen and (min-width: 300px) and (max-width: 768px){
+    .info{
+        width: 400px;
+    }
+}
