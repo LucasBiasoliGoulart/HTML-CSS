@@ -32,6 +32,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font-size: 40px;
     color: white;
 }
@@ -50,6 +51,10 @@ body{
 
 .asida h3{
     font-size: 40px;
+}
+
+.asida ul{
+    border-radius: 10px;
 }
 
 .main{
@@ -73,6 +78,11 @@ body{
 .main p{
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.main button{
+    width: 20%;
+    font-size: 20px;
 }
 
 .footer{
