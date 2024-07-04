@@ -13,14 +13,15 @@ Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
 escreva("Você vai digitar a temperatura em qual escala (C/F)?: ")
 leia(escala)
-escreva("Digite a temperatura em Fahrenheit: ")
+escreva("Digite a temperatura: ")
 leia(temperatura)
 
-se escala "F" entao
-   escreva("Temperatura equivalente em Celsius:", soma:4:2)
+se escala = "F" entao
+   soma <- (5/9) * (temperatura - 32)
+   escreva("Temperatura: ", soma:4:2, " C")
 senao
-   escreva("")
-
-
+   soma <- (9 * temperatura / 5) + 32
+   escreva("Temperatura: ", soma:4:2, " F")
+fimse
 
 Fimalgoritmo
