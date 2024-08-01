@@ -15,7 +15,7 @@ leia(x)
 
 para contador de 1 ate x faca
      se contador % 2 <> 0 entao
-        escreva("Valor: ", contador)
+        escreval("Valor =", contador)
      fimse
 fimpara
 
