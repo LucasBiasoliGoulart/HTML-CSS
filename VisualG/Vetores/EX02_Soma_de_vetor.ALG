@@ -7,6 +7,7 @@ Algoritmo "semnome"
 Var
 // Seção de Declarações das variáveis 
 n, i: inteiro
+soma, media: real
 vet: vetor [0..9] de real
 
 Inicio
@@ -14,18 +15,16 @@ Inicio
 escreva("Quantos números você vai digitar: ")
 leia(n)
 
-para i de 0 ate n+1 faca
+para i de 0 ate n-1 faca
      escreva("Digite um número: ")
      leia(vet[i])
+     soma <- soma + vet[i]
+     media <- media * vet[i]
 fimpara
 
 escreval()
-
-para i de 0 ate n+1 faca
-     se vet[i] > entao
-        escreva("Valores =", vet[i])
-     fimse
-fimpara
-
+escreval("Valores =", vet[i])
+escreval("Soma =", soma)
+escreva("Média =", media)
 
 Fimalgoritmo
