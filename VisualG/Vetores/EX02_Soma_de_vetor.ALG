@@ -19,12 +19,13 @@ para i de 0 ate n-1 faca
      escreva("Digite um número: ")
      leia(vet[i])
      soma <- soma + vet[i]
-     media <- media * vet[i]
+     media <- media + vet[i] / 4
 fimpara
 
 escreval()
 escreval("Valores =", vet[i])
 escreval("Soma =", soma)
 escreva("Média =", media)
+escreval()
 
 Fimalgoritmo
