@@ -42,6 +42,8 @@ repita
        fimse
   fimpara
   
+  escreval()
+  escreval("Relatorio")
   escreval("Valor total da compra = R$", tcompra)
   escreval("Valor total de venda = R$", tvenda)
   
